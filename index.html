@@ -8,10 +8,28 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<!-- main css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- responsive css -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<!-- default color skin -->
 	<link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+	<!-- style switcher - for demo purposes only -->
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css">
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled>
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled>
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled>
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled>
+	<link rel="stylesheet" type="text/css" href="css/style-switcher.css">
 </head>
 <body>
+
+	<!-- preloader start -->
+	<div class="preloader">
+		<div class="box">
+			<div></div><div></div><div></div>
+		</div>
+	</div>
+	<!-- preloader end -->
+
 	<!-- header start -->
 	<header class="header">
 		<div class="container">
@@ -32,21 +50,22 @@
 		<div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
 		<div class="nav-menu-inner">
 			<ul>
-				<li><a href="#" class="inner-shadow active">Главная</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">О нас</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">Услуги</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">Портфолио</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">Комментарии</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">Контакты</a></li>
+				<li><a href="#home" class="link-item inner-shadow active">Главная</a></li>
+				<li><a href="#about" class="link-item outer-shadow hover-in-shadow">О нас</a></li>
+				<li><a href="#services" class="link-item outer-shadow hover-in-shadow">Услуги</a></li>
+				<li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Портфолио</a></li>
+				<li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">Комментарии</a></li>
+				<li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Контакты</a></li>
 			</ul>
 		</div>
 		<!-- copyright text -->
 		<p class="copyright-text">&copy; 2022 West Dev</p>
 	</nav>
+	<div class="fade-out-effect"></div>
 	<!-- navigation menu end -->
 
 	<!-- home section start -->
-	<section class="home-section section">
+	<section class="home-section section active" id="home">
 		<!-- effect wrap start -->
 		<div class="effect-wrap">
 			<div class="effect effect-1"></div>
@@ -66,10 +85,10 @@
 					<p>Привет</p>
 					<h1>West Dev</h1>
 					<h3>решим любые ИТ проблемы</h3>
-					<a href="#" class="btn-1 outer-shadow hover-in-shadow">Подробнее</a>
+					<a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">Подробнее</a>
 				</div>
 				<div class="home-img">
-					<div class="img-box">
+					<div class="img-box inner-shadow">
 						<img src="img/main-pic.png" class="outer-shadow" alt="profile-pic">
 					</div>
 				</div>
@@ -79,7 +98,7 @@
 	<!-- home section end -->
 
 	<!-- about section start -->
-	<section class="about-section section">
+	<section class="about-section section" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -108,8 +127,8 @@
 					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow">Скачать прайс-лист</a>
-					<a href="#" class="btn-1 outer-shadow hover-in-shadow">Заказать</a>
+					<a href="CV.pdf" class="btn-1 outer-shadow hover-in-shadow">Скачать прайс-лист</a>
+					<a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Заказать</a>
 				</div>
 			</div>
 			<!-- about tabs start -->
@@ -323,7 +342,7 @@
 	<!-- about section end -->
 
 	<!-- service section start -->
-	<section class="service-section section">
+	<section class="service-section section" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -396,7 +415,7 @@
 	<!-- service section end -->
 
 	<!-- portfolio section start -->
-	<section class="portfolio-section section">
+	<section class="portfolio-section section" id="portfolio">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -872,7 +891,7 @@
 	<!-- portfolio section end -->
 
 	<!-- testimonial section start -->
-	<section class="testimonial-section section">
+	<section class="testimonial-section section" id="testimonial">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -925,7 +944,7 @@
 	<!-- testimonial section end  -->
 
 	<!-- contact section start -->
-	<section class="contact-section section">
+	<section class="contact-section section" id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -1001,11 +1020,11 @@
 		<div class="pp-details">
 			<div class="pp-details-inner">
 				<div class="pp-title">
-					<h2>Shantui Uzb</h2>
-					<p>Категория - <span class="pp-project-category">Веб-приложение</span></p>
+					<h2></h2>
+					<p>Категория - <span class="pp-project-category"></span></p>
 				</div>
 				<div class="pp-project-details">
-					<div class="row">
+					<!-- <div class="row">
 						<div class="description">
 							<h3>Краткое описание проекта:</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -1019,7 +1038,7 @@
 								<li>Ссылка - <span><a href="https://shantuiuzb.com/">shantuiuzb.com</a></span></li>
 							</ul>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -1031,7 +1050,7 @@
 				<div class="pp-project-details-btn outer-shadow hover-in-shadow">Детали проекта <i class="fas fa-plus"></i></div>
 				<div class="pp-close outer-shadow hover-in-shadow">&times;</div>
 				<img src="img/portfolio/large/shantui/1.png" alt="img" class="pp-img outer-shadow">
-				<div class="pp-counter">1 из 6</div>
+				<div class="pp-counter"></div>
 			</div>
 			<div class="pp-loader">
 				<div></div>
@@ -1043,9 +1062,28 @@
 	</div>
 	<!-- portfolio popup end -->
 
+	<!-- style switcher start - for demo purposes only -->
+	<div class="style-switcher outer-shadow">
+		<div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+			<i class="fas fa-cog fa-spin"></i>
+		</div>
+		<div class="day-night s-icon outer-shadow hover-in-shadow">
+			<i class="fas"></i> <!-- fa-moon -->
+		</div>
 
+		<h4>Цвета тем</h4>
+		<div class="colors">
+			<span class="color-1" onclick="setActiveStyle('color-1')"></span>
+			<span class="color-2" onclick="setActiveStyle('color-2')"></span>
+			<span class="color-3" onclick="setActiveStyle('color-3')"></span>
+			<span class="color-4" onclick="setActiveStyle('color-4')"></span>
+			<span class="color-5" onclick="setActiveStyle('color-5')"></span>
+		</div>
+	</div>
+	<!-- style switcher end -->	
 
 	<!-- main js -->
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/style-switcher.js"></script>
 </body>
 </html>
