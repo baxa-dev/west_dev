@@ -148,6 +148,7 @@
 		flex-wrap: wrap;
 		display: inline-block;
 		position: relative;
+		word-wrap: break-word;
 		left: 15%;
 	}
 	.about-section .team .team-item:nth-child(even){
@@ -157,6 +158,7 @@
 		flex-wrap: wrap;
 		display: inline-block;
 		position: relative;
+		word-wrap: break-word;
 		left: 15%;
 		margin-top: 30px;
 	}
@@ -187,15 +189,15 @@
 		padding: 0;
 		flex-wrap: wrap;
 		word-wrap: break-word;
-		margin-left: 20px;
+		margin-left: 0;
 	}
 	.about-section .team .team-item:nth-child(even){
 		flex: 0 0 70%;
 		max-width: 70%;
 		padding: 0;
 		flex-wrap: wrap;
-		margin-top: 50px;
+		margin-top: 30px;
 		word-wrap: break-word;
-		margin-left: 20px;
+		margin-left: 0;
 	}
 }
